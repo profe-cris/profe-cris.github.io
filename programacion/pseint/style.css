@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;500;600;700;800&family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+h2 {
+    font-family: 'Karla', sans-serif;
+}
+
+p, a {
+    font-family: 'Rubik', sans-serif;
+}
+
+header {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 0 5%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+header .BxTexto,
+header .BxImg {
+    width: 50%;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header .BxTexto .texto h2 {
+    font-size: 2.5em;
+    font-weight: 700;
+}
+
+header .BxTexto .texto p {
+    font-size: 1.2em;
+    margin-top:10px;
+}
+
+header .BxImg img {
+    width: 100%;
+}
+
+header nav {
+    position: absolute;
+    width: 100%;
+    height: 70px;
+    left: 0;
+    bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    width: 80%;
+    justify-content: center;
+}
+
+header nav .navegation li a {
+    text-decoration: none;
+    font-size: 1em;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #CE2424;
+    color: #CE2424;
+    font-weight: 500;
+    box-shadow: 0px 0px 15px 0px #d3d3d3;
+    transition: .3s;
+}
+
+header nav .navegation li a:hover {
+    color: #FFF;
+    background: #CE2424;
+}
+
+/*Condicionales*/
+
+.container {
+    width: 100%;
+    height: auto;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#condi {
+    background: #ededed;
+    border-radius: 20px;
+}
+
+#ciclos {
+    background: #fbfbfb;
+}
+
+.container .text {
+    position: relative;
+    width: auto;
+    height: 50px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.container .text>h2 {
+    position: relative;
+    font-size: 2em;
+    font-weight: 800;
+}
+
+.container .text>span{
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 100px;
+    height: 5px;
+    background: #CE2424;
+    transition: .5s ease-in-out;
+}
+
+.container .text:hover>span{
+    width: 100%;
+}
+
+.EjerBx {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+i {
+    color: #a7a7a7;
+}
+
+.BxEjer {
+    position: relative;
+    width: 360px;
+    height: 250px;
+    padding: 15px;
+    margin: 20px;
+    border-radius: 10px;
+    background: #ffffff;
+    border: 1px solid #bebebe;
+    /*box-shadow: 0px 0px 15px 0px #d3d3d3;*/
+    overflow: hidden;
+}
+
+.BxEjer h2 {
+    position: relative;
+    font-size: 1.5em;
+    z-index: 100;
+}
+
+.BxEjer p {
+    position: relative;
+    font-size: 1em;
+    padding: 5px 0;
+    z-index: 100;
+}
+
+.BxEjer a {
+    position: absolute;
+    bottom: 20px;
+    z-index: 100;
+    font-size: 1em;
+    text-decoration: none;
+    margin-top: 15px;
+    padding: 10px;
+    color: #2488CE;
+    border-radius: 5px;
+    border: 1px solid #2488CE;
+    transition: .2s;
+}
+
+.BxEjer a:hover {
+    color: #fff;
+    background: #2488CE;
+}
+
+/*Pie de pagina*/
+
+footer {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    padding: 0 5%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #1A2D39;
+}
+
+footer h2 {
+    font-size: 2.5em;
+    text-transform: uppercase;
+    cursor: default;
+    font-weight: 900;
+    color: #ffffff;
+    padding: 30px;
+    text-shadow: 2px 2px 0 #CE2424, 5px 5px 0 #000000;
+    transition: 2s ease-in-out;
+}
+
+footer p {
+    position: absolute;
+    bottom: 15px;
+    color: #ffffff;
+    font-size: 1em;
+    font-weight: 200;
+}
+
+/*Responsive Tablet*/
+
+@media only screen and (max-width:768px) {
+    header {
+        height: 570px;
+    }
+
+    header .BxTexto,
+    header .BxImg {
+    padding: 3%;
+    }
+
+    header .BxTexto .texto h2 {
+    font-size: 2em;
+    font-weight: 700;
+    }
+
+    header .BxTexto .texto p {
+    font-size: 1em;
+    margin-top:10px;
+    }
+
+    /*Condicionales*/
+
+    .container .text>h2 {
+        font-size: 1.8em;
+    }
+    
+    .BxEjer {
+        width: 340px;
+        height: 270px;
+        padding: 15px;
+        margin: 10px;
+    }
+
+    footer h2 {
+        font-size: 2em;
+    }
+
+}
+
+/*Responsive Mobile*/
+
+@media only screen and (max-width:600px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header .BxTexto {
+        width: 100%;
+        padding: 5% 2%;
+    }
+
+    header .BxImg {
+        width: 80%;
+    }
+
+    header .BxTexto .texto h2 {
+        font-size: 2em;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    header .BxTexto .texto p {
+        font-size: 1em;
+        margin-top:10px;
+    }
+
+    footer h2 {
+        font-size: 2em;
+    }
+
+}
+
+@media only screen and (max-width:480px) {
+    header nav .navegation {
+        display: none;
+    }
+
+    header nav .navegation.active {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        bottom: 68px;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: #ffffff;
+        box-shadow: 0px 0px 15px 0px #d3d3d3;
+        z-index: 1000;
+    }
+
+    header nav .navegation li a {
+        display: inline-block;
+    }
+    
+    header nav .menuToggle {
+        position: relative;
+        width: 50px;
+        height: 50px;
+        background: url('./img/menu.svg') no-repeat center;
+        background-size: 30px;
+        cursor: pointer;
+        border: 1px solid #CE2424;
+        border-radius: 5px;
+        box-shadow: 0px 0px 15px 0px #d3d3d3;
+        transition: .2s;
+    }
+
+    header nav .menuToggle.active {
+        position: fixed;
+        bottom: 5px;
+        background: url('./img/close.svg') no-repeat center;
+        background-size: 30px;
+        cursor: pointer;
+        transition: .2s;
+        z-index: 1000;
+    }
+
+    .container .text {
+        margin: 30px;
+        height: 80px;
+    }
+
+    .container .text>span {
+        left: 35px;
+    }
+
+    .container .text:hover>span {
+        width: 80%;
+    }
+
+    footer {
+        height: 250px;
+    }
+
+    footer h2 {
+        font-size: 1.5em;
+        margin: 20px 0;
+    }
+}

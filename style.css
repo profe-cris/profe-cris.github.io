@@ -1,0 +1,372 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;500;600;700;800&family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/*Cabecera*/
+
+.BxHeader {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.BxHeader .BxText {
+    display: flex;
+    flex-direction: column;
+}
+
+.BxHeader .BxText .title p {
+    font-family: 'Rubik', sans-serif;
+    font-size: 3em;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.BxHeader .BxText .title b {
+    color: #ffffff;
+    background: #1BA0F2;
+    font-weight: 600;
+    padding: 0 20px 20px 0;
+    transition: .2s;    
+}
+
+.BxHeader .BxText .title b:hover {
+    padding: 0 10px 10px 0;
+}
+
+.BxHeader .BxText .BxSub-title {
+    position: relative;
+    font-family: 'Karla', sans-serif;
+}
+
+.BxHeader .BxText .BxSub-title .BxMedidas {
+    position: absolute;
+    bottom: -40px;
+    left: 170px;
+    padding: 5px 10px;
+    color: #fff;
+    background: #1BA0F2;
+    border-radius: 5px;
+}
+
+.BxHeader .BxText .BxSub-title .sub-title {
+    position: relative;
+    font-family: 'Rubik', 'Karla', sans-serif;
+    font-size: 1.5em;
+    font-weight: 400;
+    margin-top: 20px;
+    padding: 10px;
+    background: #FFF;
+    border: 2px solid #1BA0F2;
+}
+
+.BxHeader .BxText .BxSub-title .sub-title .linea1,
+.BxHeader .BxText .BxSub-title .sub-title .linea2 {
+    position: absolute;
+    width: 1000px;
+    border: 1px dashed #1BA0F2;
+    z-index: -100;
+}
+
+.BxHeader .BxText .BxSub-title .sub-title .linea1 {
+    left: 0;
+    top: 25px
+}
+.BxHeader .BxText .BxSub-title .sub-title .linea2 {
+    transform: rotate(90deg);
+    bottom: 500px;
+    right: -250px;
+}
+
+.BxHeader .BxText .BxSub-title .sub-title .border1 {
+    position: absolute;
+    top: -7px;
+    left: -7px;
+    width: 15px;
+    height: 15px;
+    background: #fff;
+    border: 2px solid #1BA0F2;
+}
+
+.BxHeader .BxText .BxSub-title .sub-title .border2 {
+    position: absolute;
+    top: -7px;
+    right: -7px;
+    width: 15px;
+    height: 15px;
+    background: #fff;
+    border: 2px solid #1BA0F2;
+}
+
+.BxHeader .BxText .BxSub-title .sub-title .border3 {
+    position: absolute;
+    bottom: -7px;
+    left: -7px;
+    width: 15px;
+    height: 15px;
+    background: #fff;
+    border: 2px solid #1BA0F2;
+}
+
+.BxHeader .BxText .BxSub-title .sub-title .border4 {
+    position: absolute;
+    bottom: -7px;
+    right: -7px;
+    width: 15px;
+    height: 15px;
+    background: #fff;
+    border: 2px solid #1BA0F2;
+}
+
+/*Nav*/
+
+header nav {
+    position: absolute;
+    width: 100%;
+    height: 150px;
+    padding-right: 100px;
+    top: 0;
+    left: 0;
+    font-family: 'Rubik', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    z-index: 100;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    position: relative;
+}
+
+header nav ul li a {
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    color: #CE2424;
+    font-weight: 500;
+    margin: 0 15px;
+    padding: 10px 30px;
+    border: 2px solid #000;
+    background: #FFF;
+    transition: .3s;
+}
+
+header nav ul li span {
+    position: absolute;
+    bottom: -6px;
+    left: 80%;
+    width: 20px;
+    height: 10px;
+    background: #fff;
+    border: 2px solid #000;
+    transition: .2s;
+}
+
+header nav ul li a:hover {
+    border-color: #CE2424;
+}
+
+header nav ul li a:hover span {
+    left: 20%;
+    border-color: #CE2424;
+}
+
+/*About me*/
+
+.about .container {
+    position: relative;
+    width: 100%;
+    background: #fff;
+    display: flex;
+    flex-direction: row;
+}
+
+.about .container :is(.info, .skills) {
+    position: relative;
+    width: 50%;
+    padding: 50px;
+    font-family: 'Rubik', sans-serif;
+}
+
+.about .container h2 {
+    position: relative;
+    font-family: 'Karla', sans-serif;
+    font-size: 1.7em;
+    font-weight: 900;
+    text-transform: uppercase;
+    padding: 7px;
+    margin: 10px;
+}
+
+.about .container h2 b {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100px;
+    height: 7px;
+    background: #CE2424;
+}
+
+.about .container h2 b::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 10px;
+    width: 98px;
+    height: 5px;
+    border: 1px solid #000;
+}
+
+.about .container .info > h2 {
+    margin-bottom: 30px;
+} 
+
+/*Skills*/
+.about .container .skills .BxSkill {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about .container .skills .skill {
+    width: 80%;
+    height: 100px;
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #000;
+    box-shadow: 5px 5px 0 #000;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.about .container .skills .skill img {
+    width: 80px;
+    height: 80px;
+}
+
+.about .container .skills .skill div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10px;
+}
+
+.about .container .skills .skill div label {
+    font-family: 'Karla',sans-serif;
+    font-size: 1.2em;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.about .container .skills .skill div :is(.p_html, .p_css) {
+    width: 150px;
+    height: 15px;
+    padding: 0;
+    margin-bottom: 5px;
+}
+
+.about .container .skills .skill div .p_html {
+    border: 1px solid #ff5722;
+    background: #60210d;
+}
+
+.about .container .skills .skill div .p_html > span {
+    width: 90%;
+    height: 100%;
+    background: #ff5722;
+}
+
+.about .container .skills .skill div .p_css {
+    border: 1px solid #2299f8;
+    background: #0b2e4b;
+}
+
+.about .container .skills .skill div .p_css > span {
+    width: 80%;
+    height: 100%;
+    background: #2299f8;
+}
+
+/*Responsive Mobile*/
+
+@media only screen and (max-width:600px) {
+    .BxHeader {
+        width: 100%;
+        height: 570px;
+    }
+
+    .BxHeader .BxText .title > p {
+        font-size: 2em;
+    }
+
+    .BxHeader .BxText .sub-title > p {
+        font-size: 0.8em;
+    }
+}
+
+@media only screen and (max-width:480px) {
+    header nav .navegation {
+        display: none;
+    }
+
+    header nav .navegation.active {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        bottom: 68px;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: #ffffff;
+        box-shadow: 0px 0px 15px 0px #d3d3d3;
+        z-index: 1000;
+    }
+
+    header nav .navegation li a {
+        display: inline-block;
+    }
+    
+    header nav .menuToggle {
+        position: relative;
+        width: 50px;
+        height: 50px;
+        background: url('./img/menu.svg') no-repeat center;
+        background-size: 30px;
+        cursor: pointer;
+        border: 1px solid #CE2424;
+        border-radius: 5px;
+        box-shadow: 0px 0px 15px 0px #d3d3d3;
+        transition: .2s;
+    }
+
+    header nav .menuToggle.active {
+        position: fixed;
+        bottom: 5px;
+        background: url('./img/close.svg') no-repeat center;
+        background-size: 30px;
+        cursor: pointer;
+        transition: .2s;
+        z-index: 1000;
+    }
+}
